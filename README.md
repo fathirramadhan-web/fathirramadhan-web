@@ -162,4 +162,4 @@ Fathir Hidayah Ramadhan · Informatics Engineering, Telkom University Purwokerto
 
 ![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=fathirramadhan-web&layout=compact&hide_border=true&bg_color=0D1117&title_color=7C3AED&text_color=c9d1d9)
 
-![Contribution snake](https://raw.githubusercontent.com/fathirramadhan-web/fathirramadhan-web/refs/heads/output/github-contribution-grid-snake.svg)
+![Pac-Man contribution graph](https://raw.githubusercontent.com/fathirramadhan-web/fathirramadhan-web/refs/heads/output/pacman-contribution-graph.svg)
