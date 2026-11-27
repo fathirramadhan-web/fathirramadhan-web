@@ -14,83 +14,100 @@
 
 ## About
 
-I build AI-powered products and autonomous agent systems, then ship them as real, production-grade software. My main technical interest is **LLM engineering** — turning language-model capabilities into reliable, user-facing features through prompt design, output parsing, multi-provider fallback, and strict validation.
+I build AI-powered products, autonomous agent systems, and fast offline-first software, then ship them as real, production-grade applications. My main technical interest is **LLM engineering & agent orchestration** — turning language-model capabilities into reliable tools through structured output, MCP servers, multi-provider fallback, and strict validation.
 
-My work spans two directions. On one side, **applied AI**: transcription and content-analysis pipelines, legal RAG over hundreds of Indonesian statutes, and classical machine learning with proper evaluation and explainability. On the other, **full-stack engineering**: the Next.js frontends, FastAPI/Laravel backends, databases, and deployment pipelines that put those models in front of real users.
+My work spans three connected areas: **applied AI & ML** (Hermes Agent orchestration, Playwright/CDP browser automation, legal RAG over 340+ Indonesian statutes, in-browser Whisper transcription, and tuned tabular ML pipelines with SHAP explainability), **full-stack web engineering** (Next.js, React, FastAPI, Laravel, Supabase, PostgreSQL), and **systems / native apps** (**Rust** backends and cores with Tauri 2 and Flutter FFI).
 
-I care about reliability by design — fallback strategies, validation at every trust boundary, and verification before output. A model is only useful once it is running inside a real system: an API, a database, a job queue, a deployment.
+I care about reliability by design — fallback strategies, offline-first execution, validation at every trust boundary, and verification before output. A model is only useful once it runs inside a real system: an API, a local core, a database, or a desktop/mobile workflow.
 
 ```
-DATA → MODEL → PROMPT → API → DATABASE → JOB QUEUE → FRONTEND → DEPLOYMENT
+DATA → MODEL → PROMPT → AGENT / MCP → API / RUST CORE → DATABASE → FRONTEND → DEPLOYMENT
 ```
 
-I am a recent Informatics Engineering graduate from **Telkom University Purwokerto** (GPA 3.72/4.00), with internship experience in web development (Dinas Komunikasi dan Informatika Kabupaten Cirebon) and quality assurance (PT Telkomsel).
+I am a recent Informatics Engineering graduate from **Telkom University Purwokerto** (GPA 3.72/4.00), with internship experience in web development (**Dinas Komunikasi dan Informatika Kabupaten Cirebon**) and quality assurance (**PT Telkomsel**).
 
 ## Current Focus
 
 ```
-AI Engineering   → LLM integration, prompt design, structured output, provider fallback
-RAG              → Hybrid retrieval (semantic + BM25), local embeddings, grounded generation
-Autonomous Agent → Browser automation agents, agentic coding agents, tool use, recovery loops
-Machine Learning → Feature engineering, imbalance handling, model tuning, SHAP explainability
-Full-Stack       → Next.js (App Router), React, FastAPI, Laravel, Supabase, Prisma, PostgreSQL
-Reliability      → Rate limiting, CSRF protection, row-level security, idempotent retries
-Deployment       → Vercel, Docker, GitHub Actions, Cloudflare R2, Neon / Supabase
+AI & LLM Engineering → Structured output, prompt design, multi-provider fallback, MCP servers
+Autonomous Agents    → Hermes Agent orchestration, Playwright + CDP automation, recovery loops
+Systems & Native     → Rust (Tauri 2, russh, Axum), Flutter + Rust FFI, offline-first SQLite apps
+RAG & Retrieval      → Hybrid retrieval (semantic + BM25), local embeddings, grounded generation
+Machine Learning     → Tabular ML, imbalance handling, Optuna tuning, SHAP explainability, Streamlit
+Full-Stack Web       → Next.js (App Router), React, TypeScript, FastAPI, Laravel, Supabase, PostgreSQL
+Deployment & QA      → Docker, Vercel, GitHub Actions, Postman API testing, Playwright / pytest
 ```
 
 **Shipping / recently shipped**
 
 ```
-Clipperin        — AI video clipping: long-form to vertical clips with auto captions
-Latview/Gaskarir — AI career platform: CV builder, mock interview, assessment, tracker
+RINA             — Cross-platform SSH client (Rust, Tauri 2, React, encrypted vault, SFTP)
+MIRA             — Offline-first Windows app turning docs, OCR & audio into clean Markdown
+DEWI             — Zero-watermark Playwright + CDP demo recorder with offline voice-over
+Sepurku          — Indonesian railway route & schedule app (Flutter + Rust core via FFI)
+VERA             — Offline-first vehicle expense & reminder assistant (Flutter + Rust)
+Clipperin        — Local AI video clipper & downloader (FastAPI, Whisper, FFmpeg, MCP)
+SubLive          — Client-side PWA subtitle generator running Whisper directly in the browser
+Frenbot          — Smartfren account manager via Telegram Bot, terminal CLI & MCP server
+FindMyJob        — CV-driven job discovery & Google Sheets pipeline automation
+ML Lab Suite     — Fraud detection, Jakarta house price & telco churn (Optuna, XGBoost, Streamlit)
 TanyaNusa        — Indonesian legal RAG over 340+ statutes with hybrid retrieval
+Latview/Gaskarir — AI career platform: CV builder, mock interview, assessment, tracker
 browser-qa-agent — AI agent for exploratory browser QA with screenshot evidence
-Coursera Agent   — Autonomous agent solving graded quizzes via page-state reasoning
-GitHub Engineer  — Agent that reproduces and fixes real GitHub issues, verified by tests
-MetaPrediction   — Dota 2 meta prediction with leakage-safe expanding-window ML
-Aksaraku         — Medium-style poetry & writing platform, zero-database cost
-SIMASET          — Government asset management system (Laravel)
+SIMASET          — Government asset management system (Laravel 10, MySQL)
 ```
 
 ## Technical Maturity
 
 ```
 CORE
-Python · TypeScript · Next.js · React · Machine Learning (Scikit-learn, XGBoost)
+Python · TypeScript · Rust · Next.js · React · Machine Learning (Scikit-learn, XGBoost)
 
 APPLIED
-LLM Engineering · Prompt Engineering · RAG (Hybrid Retrieval) · Autonomous Agents
-FastAPI · Laravel · Supabase · Prisma · PostgreSQL · MySQL · Playwright · FFmpeg
+LLM Engineering · Hermes Agent · RAG (Hybrid Retrieval) · Autonomous Agents · MCP Servers
+FastAPI · Tauri 2 · Flutter / Dart · Laravel · Supabase · PostgreSQL · SQLite · Playwright · FFmpeg
 
 DEVELOPING
-Model deployment at scale · MLOps · Vector database infrastructure · Agent orchestration
+Rust FFI & cross-platform mobile cores · Optuna & ML serving · Vector infrastructure · Agent orchestration
 ```
 
 ## Featured Projects
 
-**AI / LLM Engineering**
+**Systems, Desktop & Mobile**
 
 | Project | Description | Stack |
 |---|---|---|
-| **Clipperin** | AI-powered video clipping platform — turns long-form video into ready-to-publish vertical clips with automatic captioning and 9:16 cropping. Event-driven pipeline with LLM moment analysis and a rule-based fallback. | [Next.js](https://github.com/fathirramadhan-web/clipperin) · TypeScript · Inngest · Whisper · GPT-4 · FFmpeg · Neon PostgreSQL |
-| **Latview / Gaskarir** | AI career platform: CV builder, mock interview with text-to-speech, skill assessment, and application tracking. Multi-provider LLM with fallback, validated API routes. | Next.js 16 · React 19 · TypeScript · Supabase · Gemini · OpenAI · Zod |
-| **TanyaNusa** | Legal RAG assistant over 340+ Indonesian statutes. Hybrid retrieval (FastEmbed multilingual + BM25) with a pluggable LLM layer and retrieval-only fallback to reduce hallucination. | Python · FastAPI · React · FastEmbed · BM25 · OpenRouter/Ollama · Docker |
-| **MetaPrediction** | Dota 2 hero meta prediction. Full ML pipeline with leakage-safe expanding-window validation across 8 patches, imbalance handling, and SHAP explainability. | Python · Scikit-learn · XGBoost · imbalanced-learn · SHAP |
+| **[RINA](https://github.com/fathirramadhan-web/rina)** | Cross-platform desktop SSH client with multi-tab PTY terminal, SFTP, encrypted credential vault, and optional E2E self-hosted sync server. | Rust · Tauri 2 · russh · Axum · SQLite · React 19 · TypeScript · xterm.js |
+| **[MIRA](https://github.com/fathirramadhan-web/MIRA)** | Free, offline-first Windows desktop app turning PDFs, Office docs, scans (bundled Tesseract OCR), audio, and YouTube links into editable Markdown and mind maps. | Python · MarkItDown · Tesseract OCR · Docling · PyInstaller |
+| **Sepurku** | Indonesian intercity railway route planner and departure board backed by GAPEKA 2026 schedules and a native Rust core via FFI. | Flutter · Dart · Rust (FFI) |
+| **VERA** | Offline-first vehicle expense, maintenance, and reminder assistant powered by a local Rust + SQLite domain core. | Flutter · Dart · Rust · SQLite |
 
-**Autonomous Agents**
-
-| Project | Description | Stack |
-|---|---|---|
-| **[GitHub Engineer](https://github.com/fathirramadhan-web)** | Agent that reads a real GitHub issue, explores the codebase, reproduces the bug, writes a fix, and verifies it with the project's own test suite — all inside isolated git worktrees. | Python · LLM agents · pytest · Playwright · git worktrees |
-| **Coursera Agent** | Autonomous agent that navigates Coursera modules and solves graded single/multi-select quizzes by reading page state instead of brittle selectors. | Python · Playwright · LLM reasoning |
-| **[browser-qa-agent](https://github.com/fathirramadhan-web/browser-qa-agent)** | AI agent that explores web apps in a real browser and produces consolidated QA reports with severity, reproduction steps, and screenshot evidence. | Python · browser automation |
-
-**Full-Stack**
+**AI / LLM Engineering & Machine Learning**
 
 | Project | Description | Stack |
 |---|---|---|
-| **Aksaraku** | Medium-style poetry and writing platform with an animated GSAP landing page, reader accounts, and admin dashboard. Runs on file-based JSON storage for zero database cost. | Next.js App Router · React 19 · TypeScript · GSAP |
+| **[Clipperin](https://github.com/fathirramadhan-web/clipperin)** | Local AI video clipping studio & media downloader for YouTube, Reels, and TikTok with Whisper transcription, LLM moment ranking, auto-subtitles, and an MCP server. | Python · FastAPI · Whisper · OpenAI / Gemini · FFmpeg · yt-dlp · MCP |
+| **[SubLive](https://github.com/fathirramadhan-web/SubLive)** | Client-side progressive web app that generates `.srt` subtitles from video files or browser tab audio directly on-device via Web Workers — zero backend, zero API key. | JavaScript · PWA · Whisper (transformers.js) · Web Workers |
+| **Latview / Gaskarir** | AI career platform: CV builder, mock interview with text-to-speech, skill assessment, and application tracking with multi-provider LLM fallback and Zod-validated API routes. | Next.js 16 · React 19 · TypeScript · Supabase · Gemini · OpenAI · Zod |
+| **TanyaNusa** | Legal RAG assistant over 340+ Indonesian statutes using hybrid retrieval (multilingual FastEmbed + BM25) and a retrieval-only fallback to reduce hallucination. | Python · FastAPI · React · FastEmbed · BM25 · OpenRouter/Ollama · Docker |
+| **Applied ML Labs** | End-to-end tabular ML pipelines for [Credit Card Fraud Detection](https://github.com/fathirramadhan-web/fraud-detection), [Jakarta House Price Prediction](https://github.com/fathirramadhan-web/house-price-prediction), [Telco Churn](https://github.com/fathirramadhan-web/telco-churn-prediction), and Dota 2 MetaPrediction with Optuna tuning, SHAP explainability, and interactive UIs. | Python · Scikit-learn · XGBoost · Optuna · SHAP · Streamlit · FastAPI |
+
+**Autonomous Agents & Automation**
+
+| Project | Description | Stack |
+|---|---|---|
+| **[DEWI](https://github.com/fathirramadhan-web/DEWI)** | Windows-native Playwright + CDP screencast engine for recording narrated web app walkthroughs with smooth cursor motion, dynamic zoom, shortcut hints, and offline SAPI voice-over. | TypeScript · Node.js · Playwright · CDP · FFmpeg |
+| **[Frenbot](https://github.com/fathirramadhan-web/frenbot)** | Multi-mode Smartfren account manager (Telegram Bot, Terminal CLI, and MCP Server) featuring OTP session caching, quota analytics, QRIS/pulsa purchase, and auto-renewal. | Python · Telegram Bot · MCP · CLI |
+| **[FindMyJob](https://github.com/fathirramadhan-web/FindMyJob)** | CV-driven job discovery and scoring automation across major Indonesian job portals with Google Sheets review sync. | Python · Playwright · pdfplumber · openpyxl |
+| **[browser-qa-agent](https://github.com/fathirramadhan-web/browser-qa-agent)** | AI agent that explores web apps in a real browser and produces consolidated QA reports with severity, reproduction steps, and screenshot evidence. | Python · Browser Automation · LLM Agents |
+
+**Full-Stack Web**
+
+| Project | Description | Stack |
+|---|---|---|
+| **Aksaraku** | Medium-style poetry and writing platform with an animated GSAP landing page, reader accounts, and admin dashboard. | Next.js App Router · React 19 · TypeScript · GSAP |
 | **[SIMASET](https://github.com/fathirramadhan-web/Simaset)** | Asset management system for a government office — digitizes the full asset borrowing cycle with multi-role access, Excel import/export, and a statistics dashboard. | Laravel 10 · MySQL · PHPSpreadsheet |
+| **[Persona 5 Portfolio](https://github.com/fathirramadhan-web/portfolio)** | Persona 5 menu-inspired personal portfolio website built with vanilla MVC architecture and dynamic GitHub repository feed. | HTML · CSS · JavaScript |
 
 ## Tech Stack
 
@@ -100,18 +117,18 @@ Model deployment at scale · MLOps · Vector database infrastructure · Agent or
 
 **AI Application**
 
-`LLM Engineering` `RAG (Hybrid Retrieval)` `Structured Output` `Multi-Provider Fallback` `Browser Automation`
+`LLM Engineering` `Hermes Agent` `RAG (Hybrid Retrieval)` `Structured Output` `Multi-Provider Fallback` `MCP Servers` `XGBoost` `Optuna` `SHAP`
 
 **Programming**
 
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=ts,js,python,php,mysql&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=ts,js,python,rust,php,dart,mysql&theme=dark" />
 </a>
 
-**Backend & Database**
+**Backend, Desktop & Mobile**
 
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=nextjs,fastapi,laravel,nodejs,postgres,supabase,prisma,sqlite&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=nextjs,fastapi,laravel,nodejs,tauri,flutter,postgres,supabase,prisma,sqlite&theme=dark" />
 </a>
 
 **Frontend**
@@ -120,14 +137,23 @@ Model deployment at scale · MLOps · Vector database infrastructure · Agent or
   <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,js,html,css&theme=dark" />
 </a>
 
-**Agents & Automation**
+**Agents, Automation & API**
 
-`Playwright` `pytest` `git worktrees` `Inngest` `FFmpeg`
+<p>
+  <a href="https://github.com/NousResearch/hermes-agent">
+    <img src="assets/hermes.svg" width="48" height="48" alt="Hermes Agent" />
+  </a>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=postman&theme=dark" alt="Postman" />
+  </a>
+</p>
+
+`Hermes Agent` `MCP` `Playwright` `CDP` `Postman` `pytest` `git worktrees` `FFmpeg`
 
 **DevOps / Deployment**
 
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=vercel,docker,githubactions,aws,redis&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=vercel,docker,githubactions,aws,redis,git&theme=dark" />
 </a>
 
 ## Experience
@@ -140,11 +166,11 @@ Performed manual testing on internal digital products, designing and executing t
 
 ## Goals
 
-- Ship autonomous agents that operate safely on real repositories and real workflows
+- Ship autonomous agents (Hermes Agent, MCP toolchains, browser QA) that operate safely on real repositories and workflows
+- Build fast, offline-first desktop and mobile software combining Rust cores with modern UIs
 - Deepen RAG infrastructure: better chunking, hybrid retrieval, and citation grounding
-- Move from model experimentation to reproducible, monitored deployment pipelines
-- Publish technical write-ups on applied LLM engineering and agent design
-- Build AI products that stay functional under provider degradation, not just in the demo
+- Move from model experimentation to reproducible, tuned, and monitored ML deployment pipelines
+- Build AI products that stay functional under provider degradation or offline environments
 
 ## Support My Work
 
