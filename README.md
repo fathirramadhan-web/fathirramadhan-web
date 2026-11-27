@@ -11,8 +11,6 @@
 
 [![Email](https://img.shields.io/badge/Email-fathirhidayahramadhan%40gmail.com-7C3AED?style=flat-square&logo=gmail&logoColor=white)](mailto:fathirhidayahramadhan@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-fathirhidayahramadhan-7C3AED?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fathirhidayahramadhan)
-[![Live product](https://img.shields.io/badge/Live-clipperin.vercel.app-7C3AED?style=flat-square)](https://clipperin.vercel.app)
-[![Live product](https://img.shields.io/badge/Live-gaskarir.my.id-7C3AED?style=flat-square)](https://gaskarir.my.id)
 
 ## About
 
@@ -74,8 +72,8 @@ Model deployment at scale · MLOps · Vector database infrastructure · Agent or
 
 | Project | Description | Stack |
 |---|---|---|
-| **Clipperin** | AI-powered video clipping platform — turns long-form video into ready-to-publish vertical clips with automatic captioning and 9:16 cropping. Event-driven pipeline with LLM moment analysis and a rule-based fallback. Live at [clipperin.vercel.app](https://clipperin.vercel.app). | [Next.js](https://github.com/fathirramadhan-web/clipperin) · TypeScript · Inngest · Whisper · GPT-4 · FFmpeg · Neon PostgreSQL |
-| **Latview / Gaskarir** | AI career platform: CV builder, mock interview with text-to-speech, skill assessment, and application tracking. Multi-provider LLM with fallback, validated API routes. Live at [gaskarir.my.id](https://gaskarir.my.id). | Next.js 16 · React 19 · TypeScript · Supabase · Gemini · OpenAI · Zod |
+| **Clipperin** | AI-powered video clipping platform — turns long-form video into ready-to-publish vertical clips with automatic captioning and 9:16 cropping. Event-driven pipeline with LLM moment analysis and a rule-based fallback. | [Next.js](https://github.com/fathirramadhan-web/clipperin) · TypeScript · Inngest · Whisper · GPT-4 · FFmpeg · Neon PostgreSQL |
+| **Latview / Gaskarir** | AI career platform: CV builder, mock interview with text-to-speech, skill assessment, and application tracking. Multi-provider LLM with fallback, validated API routes. | Next.js 16 · React 19 · TypeScript · Supabase · Gemini · OpenAI · Zod |
 | **TanyaNusa** | Legal RAG assistant over 340+ Indonesian statutes. Hybrid retrieval (FastEmbed multilingual + BM25) with a pluggable LLM layer and retrieval-only fallback to reduce hallucination. | Python · FastAPI · React · FastEmbed · BM25 · OpenRouter/Ollama · Docker |
 | **MetaPrediction** | Dota 2 hero meta prediction. Full ML pipeline with leakage-safe expanding-window validation across 8 patches, imbalance handling, and SHAP explainability. | Python · Scikit-learn · XGBoost · imbalanced-learn · SHAP |
 
