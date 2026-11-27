@@ -1,8 +1,8 @@
 # Fathir Hidayah Ramadhan
 
-**AI Engineer • LLM Engineering • Autonomous Agents • Full-Stack Development**
+**AI Engineer • Autonomous Agents • Full-Stack Development**
 
-![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=900&color=7C3AED&center=true&vCenter=true&width=820&lines=Building+AI-powered+products+that+ship.;LLM+engineering%2C+RAG%2C+and+autonomous+agents.;Production-grade+full-stack+systems+in+Next.js+%2B+Python.)
+![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=900&color=7C3AED&center=true&vCenter=true&width=820&lines=Building+AI-powered+products+that+ship.;AI+engineering%2C+RAG%2C+and+autonomous+agents.;Production-grade+full-stack+systems+in+Next.js+%2B+Python.)
 
 [![Profile views](https://komarev.com/ghpvc/?username=fathirramadhan-web&label=Profile+views&color=7C3AED&style=flat-square)](https://github.com/fathirramadhan-web)
 [![GitHub followers](https://img.shields.io/github/followers/fathirramadhan-web?label=Followers&style=flat-square&color=7C3AED)](https://github.com/fathirramadhan-web?tab=followers)
@@ -14,7 +14,7 @@
 
 ## About
 
-I build AI-powered products, autonomous agent systems, and fast offline-first software, then ship them as real, production-grade applications. My main technical interest is **LLM engineering & agent orchestration** — turning language-model capabilities into reliable tools through structured output, MCP servers, multi-provider fallback, and strict validation.
+I build AI-powered products, autonomous agent systems, and fast offline-first software, then ship them as real, production-grade applications. My main focus as an **AI Engineer** is **agent orchestration & production AI workflows** — turning language-model capabilities into reliable tools through structured output, MCP servers, multi-provider fallback, and strict validation.
 
 My work spans three connected areas: **applied AI & ML** (Hermes Agent orchestration, Playwright/CDP browser automation, legal RAG over 340+ Indonesian statutes, in-browser Whisper transcription, and tuned tabular ML pipelines with SHAP explainability), **full-stack web engineering** (Next.js, React, FastAPI, Laravel, Supabase, PostgreSQL), and **systems / native apps** (**Rust** backends and cores with Tauri 2 and Flutter FFI).
 
@@ -29,7 +29,7 @@ I am a recent Informatics Engineering graduate from **Telkom University Purwoker
 ## Current Focus
 
 ```
-AI & LLM Engineering → Structured output, prompt design, multi-provider fallback, MCP servers
+AI Engineer          → Structured output, prompt design, multi-provider fallback, MCP servers
 Autonomous Agents    → Hermes Agent orchestration, Playwright + CDP automation, recovery loops
 Systems & Native     → Rust (Tauri 2, russh, Axum), Flutter + Rust FFI, offline-first SQLite apps
 RAG & Retrieval      → Hybrid retrieval (semantic + BM25), local embeddings, grounded generation
@@ -64,7 +64,7 @@ CORE
 Python · TypeScript · Rust · Next.js · React · Machine Learning (Scikit-learn, XGBoost)
 
 APPLIED
-LLM Engineering · Hermes Agent · RAG (Hybrid Retrieval) · Autonomous Agents · MCP Servers
+AI Engineer · Hermes Agent · RAG (Hybrid Retrieval) · Autonomous Agents · MCP Servers
 FastAPI · Tauri 2 · Flutter / Dart · Laravel · Supabase · PostgreSQL · SQLite · Playwright · FFmpeg
 
 DEVELOPING
@@ -82,7 +82,7 @@ Rust FFI & cross-platform mobile cores · Optuna & ML serving · Vector infrastr
 | **Sepurku** | Indonesian intercity railway route planner and departure board backed by GAPEKA 2026 schedules and a native Rust core via FFI. | Flutter · Dart · Rust (FFI) |
 | **VERA** | Offline-first vehicle expense, maintenance, and reminder assistant powered by a local Rust + SQLite domain core. | Flutter · Dart · Rust · SQLite |
 
-**AI / LLM Engineering & Machine Learning**
+**AI Engineer & Machine Learning**
 
 | Project | Description | Stack |
 |---|---|---|
@@ -117,7 +117,7 @@ Rust FFI & cross-platform mobile cores · Optuna & ML serving · Vector infrastr
 
 **AI Application**
 
-`LLM Engineering` `Hermes Agent` `RAG (Hybrid Retrieval)` `Structured Output` `Multi-Provider Fallback` `MCP Servers` `XGBoost` `Optuna` `SHAP`
+`AI Engineer` `Hermes Agent` `RAG (Hybrid Retrieval)` `Structured Output` `Multi-Provider Fallback` `MCP Servers` `XGBoost` `Optuna` `SHAP`
 
 **Programming**
 
